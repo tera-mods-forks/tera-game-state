@@ -1,31 +1,13 @@
 {
-    "files": {
-        "index.js": "c9ee1177cd74d81015bf57ae48fc26e41d1be820c2cbd6b29ad26c67771b35c6",
-        "module.json": "4aea5ad0932c6972601af7941f10b1018dc2a233a92680f08434f2ae690bdbf3",
-        "lib/me.js": "07344419499cf1a3edbdcd99992c113b7d9a474c5d4841012ab95d2f4d9fd20c",
-        "lib/contract.js": "62728397c773df7a8ad7008f4250640d941e22e1e8e38a63ae9b482c64135492",
-        "lib/data.js": "16a7876b11da461dc248d0bfd527bceaa382f7735ea6ad2d2a47e378dbfedd50",
-        "lib/res/userdata.json": "0dda60f31a59f03c078e577272c4894e3740b2c93bb85f05a85e3f7efe0829ba"
-    },
-    "defs": {
-        "C_LOGIN_ARBITER": 2,
-        "S_LOGIN_ACCOUNT_INFO": 2,
-        "S_GET_USER_LIST": "raw",
-        "S_RETURN_TO_LOBBY": "raw",
-        "S_LOGIN": ["raw", 12],
-        "S_LOAD_TOPO": ["raw", 3],
-        "S_SPAWN_ME": ["raw", 3],
-        "S_CREATURE_LIFE": 2,
-        "S_MOUNT_VEHICLE": 2,
-        "S_UNMOUNT_VEHICLE": 2,
-        "S_EXIT": "raw",
-        "S_USER_CHANGE_NAME": 1,
-        "S_USER_LEVELUP": 2,
-        "S_USER_STATUS": 2,
-        "S_REQUEST_CONTRACT": 1,
-        "S_ACCEPT_CONTRACT": "raw",
-        "S_REJECT_CONTRACT": "raw",
-        "S_CANCEL_CONTRACT": "raw",
-        "S_BATTLE_FIELD_ENTRANCE_INFO": 1
-    }
+	"data": {
+		"doc/contract.md": "+HLsisf91Ix8x+8bXNFktiIbRn8M5CLtMPPi/uGHzVk=",
+		"doc/me.md": "uSmyP9has5GyvJkSrnq6ehypk5ygEImTfvAGtRKj5+8=",
+		"index.js": "hsnW7epeZ9dhBSOnpcmpjJTTdOJSiS8mnb4G/qQclcw=",
+		"lib/contract.js": "YnKDl8dz33qK1wCPQlBkDZQeIuHo44pjrptILGQTVJI=",
+		"lib/data.js": "FqeHaxHaRh3CSNC/1Se86qOC93Nepq0tKkfjeNv+3VA=",
+		"lib/me.js": "BzREGUmc8aPtvc2ZmSwRO32aR0xdSEEBKrldL02f0gw=",
+		"lib/res/userdata.json": "Ddpg8xpZ8DwHjldycsSJTjdAssk7uF8FqF4/fv4IKbo=",
+		"module.json": "Supa0JMsaXJgGveUHxCxAY3CojOpJoDwhDTyrmkL2/M=",
+		"README.md": "kb4QfwQKIxLyps/Iav86uncm8zB6yr0FnGjgpHlzd/Y="
+	}
 }
