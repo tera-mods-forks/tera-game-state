@@ -42,24 +42,29 @@ class TeraGameState extends EventEmitter
         this.mod = undefined;
     }
 
-    initialize(submodules)
-    {
-        if(typeof submodules === 'string')
+    initialize(submodules) {
+        if (typeof submodules === 'string')
             submodules = [submodules];
 
-        for(let submodule of submodules)
-        {
-            if(!this.loadedSubmodules[submodule])
-            {
-                try
-                {
-                    let req = require(`./lib/${submodule}`);
-                    this.loadedSubmodules[submodule] = new req(this);
-                    this[submodule] = this.loadedSubmodules[submodule];
+        for (const submodule of submodules) {
+            const [name, feature] = submodule.split('.');
+            if (!this.loadedSubmodules[name]) {
+                try {
+                    let req = require(`./lib/${name}`);
+                    this.loadedSubmodules[name] = new req(this);
+                    this[name] = this.loadedSubmodules[name];
                 }
-                catch(e)
-                {
-                    this.mod.error(`Unable to load submodule ${submodule}:`);
+                catch (e) {
+                    this.mod.error(`Unable to load submodule ${name}:`);
+                    this.mod.error(e);
+                }
+            }
+
+            if (feature && this.loadedSubmodules[name]) {
+                try {
+                    this.loadedSubmodules[name].initialize(feature);
+                } catch (e) {
+                    this.mod.error(`Unable to initialize submodule feature ${name}.${feature}:`);
                     this.mod.error(e);
                 }
             }
